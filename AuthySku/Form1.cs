@@ -63,7 +63,7 @@ namespace AuthySku
             //button1.Enabled = false;
 
             // Create a request for the URL. 		
-            WebRequest request = WebRequest.Create("http://192.168.1.128:3000" + "/api/" + token);
+            WebRequest request = WebRequest.Create("http://192.168.1.128:3000/api/" + token + "/authy");
             request.ContentType = "application/json";
             request.Method = "GET";
 
@@ -74,14 +74,22 @@ namespace AuthySku
             {
                 var result = streamReader.ReadToEnd();
                 Dictionary<string, string> htmlAttributes = JsonConvert.DeserializeObject<Dictionary<string, string>>(result);
-
-
-                using (StreamWriter file = File.CreateText("Settings.json"))
+                if (htmlAttributes["account"] == "active")
                 {
-                    JsonSerializer serializer = new JsonSerializer();
-                    serializer.Serialize(file, htmlAttributes["rando"]);
+                    MessageBox.Show("Account Active");
+
+                    string json = @"{'ReleaseDate': '1995-4-7T00:00:00'}";
+                    
+                    using (StreamWriter file = File.CreateText("Settings.json"))
+                    {
+                        JsonSerializer serializer = new JsonSerializer();
+                        serializer.Serialize(file, json);
+                    }
                 }
-                MessageBox.Show(htmlAttributes["rando"]);
+                else
+                {
+                    MessageBox.Show("not active");
+                }
             }
         }
     }

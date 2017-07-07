@@ -57,7 +57,7 @@
             this.label2.Location = new System.Drawing.Point(109, 38);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(122, 31);
-            this.label2.Text = "summer cupcake\r\nRev 0.1.705\r\n";
+            this.label2.Text = "Summer Cake\r\nRev 0.1.705\r\n";
             // 
             // label1
             // 
@@ -137,7 +137,7 @@
             this.KeyPreview = true;
             this.Menu = this.mainMenu1;
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "AuthySku";
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
