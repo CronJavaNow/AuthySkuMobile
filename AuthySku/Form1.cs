@@ -22,6 +22,20 @@ namespace AuthySku
         public Form1()
         {
             InitializeComponent();
+            
+        }
+
+        private void Form1_Shown(Object sender, EventArgs e)
+        {
+
+            MessageBox.Show("You are in the Form.Shown event.");
+
+        }
+
+        private void nukeForm()
+        {
+            new Form2().Show();
+            this.Hide();
         }
 
         private void Form1_KeyDown(object sender, KeyEventArgs e)
@@ -60,10 +74,10 @@ namespace AuthySku
             string token = textBox2.Text;
 
             // Keep from user requesting more call while loading.
-            //button1.Enabled = false;
+            button1.Enabled = false;
 
             // Create a request for the URL. 		
-            WebRequest request = WebRequest.Create("http://192.168.1.128:3000/api/" + token + "/authy");
+            WebRequest request = WebRequest.Create("http://" + host + "/api/" + token);
             request.ContentType = "application/json";
             request.Method = "GET";
 
@@ -76,20 +90,53 @@ namespace AuthySku
                 Dictionary<string, string> htmlAttributes = JsonConvert.DeserializeObject<Dictionary<string, string>>(result);
                 if (htmlAttributes["account"] == "active")
                 {
-                    MessageBox.Show("Account Active");
 
-                    string json = @"{'ReleaseDate': '1995-4-7T00:00:00'}";
-                    
+                    Settings setting = new Settings
+                    {
+                        Host = host,
+                        Token = token
+                    };
+
                     using (StreamWriter file = File.CreateText("Settings.json"))
                     {
                         JsonSerializer serializer = new JsonSerializer();
-                        serializer.Serialize(file, json);
+                        serializer.Serialize(file, setting);
                     }
+
+                    new Form2().Show();
+                    this.Hide();
+                    button1.Enabled = true;
                 }
                 else
                 {
                     MessageBox.Show("not active");
+                    button1.Enabled = true;
                 }
+            }
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void timer2_Tick(object sender, EventArgs e)
+        {
+            if (progressBar1.Value < 100)
+            {
+                progressBar1.Value += 1;
+            }
+            else
+            {
+                if (File.Exists("Settings.json"))
+                {
+                    Form2 form2 = new Form2();
+                    form2.Show();
+                    form2.Focus();
+                    this.Hide();
+                }
+                timer2.Enabled = false;
+                panel2.Visible = false;
             }
         }
     }
