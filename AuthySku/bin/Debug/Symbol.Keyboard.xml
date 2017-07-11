@@ -1,0 +1,521 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Symbol.Keyboard</name>
+    </assembly>
+    <members>
+        <member name="T:Symbol.Keyboard.Version">
+            <summary>
+            Symbol.Keyboard Version Class.
+            </summary>
+        </member>
+        <member name="M:Symbol.Keyboard.Version.#ctor">
+            <summary>
+            Defualt Version class constructor.
+            </summary>
+        </member>
+        <member name="P:Symbol.Keyboard.Version.AssemblyVersion">
+            <summary>
+            The version of the assembly.
+            </summary>
+        </member>
+        <member name="T:Symbol.Keyboard.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:Symbol.Keyboard.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:Symbol.Keyboard.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:Symbol.Keyboard.Resources.KEYPAD_DISPOSED_OBJECT">
+            <summary>
+              Looks up a localized string similar to Cannot access the disposed object..
+            </summary>
+        </member>
+        <member name="P:Symbol.Keyboard.Resources.KEYPAD_KB_NOT_AVAILABLE">
+            <summary>
+              Looks up a localized string similar to Keyboard is not available!.
+            </summary>
+        </member>
+        <member name="P:Symbol.Keyboard.Resources.MARSHAL_ALPHA_GET_FAIL">
+            <summary>
+              Looks up a localized string similar to GetAlphaMode failed..
+            </summary>
+        </member>
+        <member name="P:Symbol.Keyboard.Resources.MARSHAL_ALPHA_SET_FAIL">
+            <summary>
+              Looks up a localized string similar to SetAlphaMode failed..
+            </summary>
+        </member>
+        <member name="P:Symbol.Keyboard.Resources.MARSHAL_KB_NOTIFICATION_NOT_SUPPORTED">
+            <summary>
+              Looks up a localized string similar to Keyboard notification is not supported..
+            </summary>
+        </member>
+        <member name="P:Symbol.Keyboard.Resources.MARSHAL_KB_NOTIFICATION_REG_FAIL">
+            <summary>
+              Looks up a localized string similar to RegisterKeyboardNotification failed..
+            </summary>
+        </member>
+        <member name="P:Symbol.Keyboard.Resources.MARSHAL_KB_NOTIFICATION_UNREG_FAIL">
+            <summary>
+              Looks up a localized string similar to UnregisterKeyboardNotification failed..
+            </summary>
+        </member>
+        <member name="P:Symbol.Keyboard.Resources.MARSHAL_KEYLIGHT_MODE_GET_FAIL">
+            <summary>
+              Looks up a localized string similar to GetKeyLiteInfo failed..
+            </summary>
+        </member>
+        <member name="P:Symbol.Keyboard.Resources.MARSHAL_KEYLIGHT_MODE_SET_FAIL">
+            <summary>
+              Looks up a localized string similar to SetKeyLiteMode failed..
+            </summary>
+        </member>
+        <member name="P:Symbol.Keyboard.Resources.MARSHAL_KEYLIGHT_TIMER_GET_FAIL">
+            <summary>
+              Looks up a localized string similar to GetKeyLiteInfo failed..
+            </summary>
+        </member>
+        <member name="P:Symbol.Keyboard.Resources.MARSHAL_KEYLIGHT_TIMER_SET_FAIL">
+            <summary>
+              Looks up a localized string similar to SetKeyLiteTimer failed..
+            </summary>
+        </member>
+        <member name="P:Symbol.Keyboard.Resources.MARSHAL_KL_INTENSITY_GET_FAIL">
+            <summary>
+              Looks up a localized string similar to GetKeyLightIntensity failed..
+            </summary>
+        </member>
+        <member name="P:Symbol.Keyboard.Resources.MARSHAL_KL_INTENSITY_SET_FAIL">
+            <summary>
+              Looks up a localized string similar to SetKeyLightIntensity failed..
+            </summary>
+        </member>
+        <member name="P:Symbol.Keyboard.Resources.MARSHAL_KL_LEVELS_GET_FAIL">
+            <summary>
+              Looks up a localized string similar to GetKeyLightIntensityLevels failed..
+            </summary>
+        </member>
+        <member name="P:Symbol.Keyboard.Resources.MARSHAL_KL_STATE_GET_FAIL">
+            <summary>
+              Looks up a localized string similar to SetKeyLightState failed..
+            </summary>
+        </member>
+        <member name="P:Symbol.Keyboard.Resources.MARSHAL_KL_STATE_SET_FAIL">
+            <summary>
+              Looks up a localized string similar to GetKeyLightState failed..
+            </summary>
+        </member>
+        <member name="P:Symbol.Keyboard.Resources.MARSHAL_KS_GET_FAIL">
+            <summary>
+              Looks up a localized string similar to GetKeyStateEx failed..
+            </summary>
+        </member>
+        <member name="P:Symbol.Keyboard.Resources.MARSHAL_KS_NOTIFICATION_NOT_SUPPORTED">
+            <summary>
+              Looks up a localized string similar to KeyState notification is not supported..
+            </summary>
+        </member>
+        <member name="P:Symbol.Keyboard.Resources.MARSHAL_KS_NOTIFICATION_REG_FAIL">
+            <summary>
+              Looks up a localized string similar to RegisterKeyStateNotication failed..
+            </summary>
+        </member>
+        <member name="P:Symbol.Keyboard.Resources.MARSHAL_KS_NOTIFICATION_UNREG_FAIL">
+            <summary>
+              Looks up a localized string similar to UnregisterKeyStateNotication failed..
+            </summary>
+        </member>
+        <member name="P:Symbol.Keyboard.Resources.MARSHAL_KS_SET_FAIL">
+            <summary>
+              Looks up a localized string similar to SetKeyState failed..
+            </summary>
+        </member>
+        <member name="P:Symbol.Keyboard.Resources.MARSHAL_SMMT_NOT_SUPPORTED">
+            <summary>
+              Looks up a localized string similar to SetMultiMappingTable is not supported..
+            </summary>
+        </member>
+        <member name="P:Symbol.Keyboard.Resources.MARSHAL_SMMT_SET_FAIL">
+            <summary>
+              Looks up a localized string similar to SetMultiMappingTable failed..
+            </summary>
+        </member>
+        <member name="P:Symbol.Keyboard.Resources.MARSHAL_SMT_NOT_SUPPORTED">
+            <summary>
+              Looks up a localized string similar to SetMappingTable is not supported..
+            </summary>
+        </member>
+        <member name="P:Symbol.Keyboard.Resources.MARSHAL_SMT_SET_FAIL">
+            <summary>
+              Looks up a localized string similar to SetMappingTable failed..
+            </summary>
+        </member>
+        <member name="T:Symbol.Keyboard.KeyLiteStates">
+            <summary>
+            Possible states of keyboard light.
+            </summary>
+        </member>
+        <member name="F:Symbol.Keyboard.KeyLiteStates.KeyLite_State_Off">
+            <summary>
+            Keyboard light is off.
+            </summary>
+        </member>
+        <member name="F:Symbol.Keyboard.KeyLiteStates.KeyLite_State_On">
+            <summary>
+            Keyboard light is on.
+            </summary>
+        </member>
+        <member name="F:Symbol.Keyboard.KeyLiteStates.KeyLite_State_TrackBackLight">
+            <summary>
+            Keyboard light tracks display backlight.
+            </summary>
+        </member>
+        <member name="F:Symbol.Keyboard.KeyLiteStates.KeyLite_State_Timeout">
+            <summary>
+            Keyboard light timeout type.
+            </summary>
+        </member>
+        <member name="T:Symbol.Keyboard.KeyStates">
+            <summary>
+            The KeyStates structure provides a list of constants used to specify changes in
+            the Keyboard state.
+            </summary>
+            <remarks>Temporarily changed states like SHIFT, NUMLOCK are goes back to normal state after user pressed a key.
+            To keep the state active until de-activated, a _LOCK state should be selected from the list given below. 
+            SHIFT_LOCK, NUMERIC_LOCK, FUNCTION_LOCK, ORANGE_LOCK, ORANGE_SHIFT_LOCK
+            </remarks>
+        </member>
+        <member name="F:Symbol.Keyboard.KeyStates.KEYSTATE_UNSHIFT">
+            <summary>
+            Set keyboard shift key off state.
+            </summary>
+        </member>
+        <member name="F:Symbol.Keyboard.KeyStates.KEYSTATE_SHIFT">
+            <summary>
+            Set keyboard Shift key on state temporarily.
+            </summary>
+        </member>
+        <member name="F:Symbol.Keyboard.KeyStates.KEYSTATE_SHIFT_LOCK">
+            <summary>
+            Set keyboard Shift key on state permanently.
+            </summary>
+        </member>
+        <member name="F:Symbol.Keyboard.KeyStates.KEYSTATE_CTRL">
+            <summary>
+            Set keyboard Control key on state.
+            </summary>
+        </member>
+        <member name="F:Symbol.Keyboard.KeyStates.KEYSTATE_ALT">
+            <summary>
+            Set keyboard Alternate key on state.
+            </summary>
+        </member>
+        <member name="F:Symbol.Keyboard.KeyStates.KEYSTATE_UNDEF">
+            <summary>
+            This is an obsolete value. Please use KEYSTATE_ORANGE_TEMP.
+            </summary>
+        </member>
+        <member name="F:Symbol.Keyboard.KeyStates.KEYSTATE_NUMLOCK">
+            <summary>
+            Set keyboard Numlock key on state temporarily.
+            </summary>
+        </member>
+        <member name="F:Symbol.Keyboard.KeyStates.KEYSTATE_NUMERIC_LOCK">
+            <summary>
+            Set keyboard Numlock key on state permanently.
+            </summary>
+        </member>
+        <member name="F:Symbol.Keyboard.KeyStates.KEYSTATE_CAPSLOCK">
+            <summary>
+            Set keyboard CapsLock key on state.
+            </summary>
+        </member>
+        <member name="F:Symbol.Keyboard.KeyStates.KEYSTATE_FUNC">
+            <summary>
+            Set keyboard Function key on state temporarily.
+            </summary>
+        </member>
+        <member name="F:Symbol.Keyboard.KeyStates.KEYSTATE_FUNCTION_LOCK">
+            <summary>
+            Set keyboard Function key on state permanently.
+            </summary>
+        </member>
+        <member name="F:Symbol.Keyboard.KeyStates.KEYSTATE_ORANGE_TEMP">
+            <summary>
+            Set keyboard Orange key on state temporarily.
+            </summary>
+        </member>
+        <member name="F:Symbol.Keyboard.KeyStates.KEYSTATE_ORANGE_LOCK">
+            <summary>
+            Set keyboard Orange key on state permanently.
+            </summary>
+        </member>
+        <member name="F:Symbol.Keyboard.KeyStates.KEYSTATE_ORANGE_SHIFT_LOCK">
+            <summary>
+            Set keyboard Orange and Shift keys on state permanently.
+            </summary>
+        </member>
+        <member name="T:Symbol.Keyboard.KeyPad">
+            <summary>
+            The KeyPad class provides access to controllable keyboard features on Symbol
+            mobile devices. 
+            </summary>
+            <remarks>
+            This is the main class of the Symbol.Keyboard class library. It should be
+            used to access and control the advanced keyboard functionality on Symbol mobile
+            devices. Not all Symbol mobile devices provide advanced keyboard functionality. Please
+            see your hardware documentation for more information on the features of your device.
+            A maximum of 7 KeyPad instances can be created at a time.
+            </remarks>
+        </member>
+        <member name="M:Symbol.Keyboard.KeyPad.#ctor">
+            <summary>
+            Default Keypad constructor.
+            </summary>
+            <remarks>
+            The constructor will throw a Symbol.Exception if a keyboard cannot be found.
+            A maximum of 7 KeyPad instances can be created at a time.
+            </remarks>
+        </member>
+        <member name="M:Symbol.Keyboard.KeyPad.Finalize">
+            <summary>
+            Allows a KeyPad to attempt to free resources and perform other cleanup 
+            operations before it is reclaimed by garbage collection.
+            </summary>
+        </member>
+        <member name="M:Symbol.Keyboard.KeyPad.GetKeyStateEx">
+            <summary>
+            Retrieves the current state of the keyboard modifier flags. These flags are used during the scan-code remapping process.
+            To set the current state of the keyboard modifier flags, call SetKeyState.
+            </summary>
+            <returns>An int with one or more bits defined in KeyStates constants.</returns>
+            <remarks>This method is only applicable for ES400, MC65 and MC4500 devices</remarks>
+        </member>
+        <member name="M:Symbol.Keyboard.KeyPad.SetKeyState(System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            Establishes/activates the keyboard’s state flags. 
+            </summary>
+            <remarks>
+            The key state flags are stored in a shared address space, allowing individual
+            threads the ability to change the state of the flags. When this method is
+            called, keyboard interrupts are disabled, preventing the keyboard driver from
+            accessing invalid flag information while the flags are being updated. The state
+            of the keyboard, as known by CE, is set to a default state (Caps Lock and
+            Num Lock are reset). The flags are then updated, and CE is issued keybd_event
+            commands to synchronize CE to the new flags.
+            </remarks>
+            <param name="state">An int with one or more bits defined in KeyStates constants. For the valid combinations, please see the Remarks section.</param>
+            <param name="activeModifier">The remapping table selector, a single bit
+            of those set in state. This is not used and must be set  to 0.</param>
+            <param name="updateReg">A boolean flag requesting the registry to be updated. For the valid combinations, please see the Remarks section.</param>
+        </member>
+        <member name="M:Symbol.Keyboard.KeyPad.Dispose">
+            <summary>
+            Frees up all resources used by the KeyPad class, including any objects it has
+            created. It is strongly recommended that this method be called when the 
+            KeyPad is no longer needed by the application.
+            </summary>
+        </member>
+        <member name="P:Symbol.Keyboard.KeyPad.AlphaMode">
+            <summary>
+            Gets or sets the Alpha mode.
+            </summary>
+            <remarks>On some of the newer devices AlphaMode cannot be set. 
+            You must use <see cref="M:Symbol.Keyboard.KeyPad.SetKeyState(System.Int32,System.Int32,System.Boolean)"/>(#,#) instead.
+            </remarks>
+            <value>
+            A boolean flag that specifies whether the Alpha mode is on or not.
+            </value>
+        </member>
+        <member name="P:Symbol.Keyboard.KeyPad.KeyLiteMode">
+            <summary>
+            Gets or sets the Key Lite mode.
+            </summary>
+            <value>
+            <see cref="T:Symbol.Keyboard.KeyLiteStates"/> enumerated type that specifies the state of the key light.
+            </value>
+            <remarks> <see cref="P:Symbol.Keyboard.KeyPad.KeyLiteTimeout"/> needs to be set before setting the KeyLiteMode to KeyLite_State_Timeout.</remarks>
+        </member>
+        <member name="P:Symbol.Keyboard.KeyPad.KeyLiteTimeout">
+            <summary>
+            Gets or sets the Key Lite timeout value.
+            </summary>
+            <value>
+            An Integer that specifies the key light timeout in milliseconds.
+            </value>
+            <remarks>Minimum value is 1000 (milliseconds) and it is used only when the <see cref="P:Symbol.Keyboard.KeyPad.KeyLiteMode"/> is set to <see cref="F:Symbol.Keyboard.KeyLiteStates.KeyLite_State_Timeout"/>&gt;. Value 0 is used for other modes. </remarks>
+        </member>
+        <member name="P:Symbol.Keyboard.KeyPad.Version">
+            <summary>
+            Gets a Version object of the keyboard class library.
+            </summary>
+            <value>
+            A <see cref="T:Symbol.Keyboard.Version"/> object that contains keyboard version
+            information.
+            </value>
+        </member>
+        <member name="E:Symbol.Keyboard.KeyPad.AlphaNotify">
+            <summary>
+            Provides access to the events generated when Alpha mode has changed.
+            </summary>
+            <value>
+            A <see cref="T:Symbol.Keyboard.KeyPad.KeyboardEventHandler"/> delegate of the method that
+            will be invoked when a keyboard alpha mode event occurs.
+            </value>
+        </member>
+        <member name="E:Symbol.Keyboard.KeyPad.KeyStateNotify">
+            <summary>
+            Provides access to the events generated when KeyState has changed.
+            </summary>
+            <value>
+            A <see cref="T:Symbol.Keyboard.KeyPad.KeyboardEventHandler"/> delegate of the method that
+            will be invoked when the keyboard state event occurs.
+            </value>
+        </member>
+        <member name="T:Symbol.Keyboard.KeyPad.KeyboardEventHandler">
+            <summary>
+            Delegate of the event handler for keyboard events.
+            </summary>
+        </member>
+        <member name="T:Symbol.Keyboard.KeyboardEventArgs">
+            <summary>
+            The KeyboardEventArgs class defines arguments passed to keyboard notification events.
+            </summary>
+            <remarks>
+            KeyboardEventHandler methods will be passed a KeyboardEventArgs object. This object
+            provides information about the event that has occured. This class is not normally
+            constructed by the application developer.
+            </remarks>
+        </member>
+        <member name="M:Symbol.Keyboard.KeyboardEventArgs.#ctor(System.Int32,System.Int32)">
+            <summary>
+            KeyboardEventArgs constructor with settable wParam and lParam.
+            </summary>
+            <param name="wParam">Underlying keyboard wParam message information.</param>
+            <param name="lParam">Underlying keyboard lParam message information.</param>
+        </member>
+        <member name="P:Symbol.Keyboard.KeyboardEventArgs.KeyState">
+            <summary>
+            The current Keystate of the keyboard.
+            </summary>
+            <value>
+            An integer that contains <see cref="T:Symbol.Keyboard.KeyStates"/> information.
+            </value>
+        </member>
+        <member name="P:Symbol.Keyboard.KeyboardEventArgs.ActiveModifier">
+            <summary>
+            The current active modifier of the keyboard.
+            </summary>
+            <value>
+            An integer that specifies the current active modifier for the keyboard.
+            </value>
+        </member>
+        <member name="T:Symbol.Keyboard.KeyLight">
+            <summary>
+            The KeyLight class provides control over the keyboard backlight of the device.
+            NOTE: This feature is currently available for the VC6090 device only.
+            </summary>
+        </member>
+        <member name="M:Symbol.Keyboard.KeyLight.#ctor">
+            <summary>
+            KeyLight constructor
+            </summary>
+        </member>
+        <member name="M:Symbol.Keyboard.KeyLight.Finalize">
+            <summary>
+            KeyLight destructor.
+            </summary>
+        </member>
+        <member name="M:Symbol.Keyboard.KeyLight.Dispose">
+            <summary>
+            Dispose method
+            </summary>
+        </member>
+        <member name="P:Symbol.Keyboard.KeyLight.SupportedIntensityLevels">
+            <summary>
+            Gets the number of supported keylight intensity levels. 
+            NOTE: This property is currently available for the VC6090 device only.
+            </summary>
+        </member>
+        <member name="P:Symbol.Keyboard.KeyLight.IntensityLevel">
+            <summary>
+            Controls the keylight intensity level. When setting the intensity level, this value must be 
+            between 0 and maximum level(SupportedIntensityLevels minus 1). 
+            NOTE: This property is currently available for the VC6090 device only.
+            </summary>
+        </member>
+        <member name="P:Symbol.Keyboard.KeyLight.State">
+            <summary>
+            Gets or sets the keylight state.
+            NOTE: This property is currently available for the VC6090 device only.
+            </summary>
+        </member>
+        <member name="T:Symbol.Keyboard.KeyLight.KEYLIGHT_STATES">
+            <summary>
+            Defines the possible Keylight states
+            </summary>
+        </member>
+        <member name="F:Symbol.Keyboard.KeyLight.KEYLIGHT_STATES.KEYLIGHT_OFF">
+            <summary>
+            Keylight is OFF
+            </summary>
+        </member>
+        <member name="F:Symbol.Keyboard.KeyLight.KEYLIGHT_STATES.KEYLIGHT_ON">
+            <summary>
+            Keylight is ON
+            </summary>
+        </member>
+        <member name="T:Symbol.Keyboard.KeyLight.KEYLIGHT_RESULTS">
+            <summary>
+            Possible result codes of the Keylight operations
+            </summary>
+        </member>
+        <member name="F:Symbol.Keyboard.KeyLight.KEYLIGHT_RESULTS.E_KLT_SUCCESS">
+            <summary>
+            Operation succeeded
+            </summary>
+        </member>
+        <member name="F:Symbol.Keyboard.KeyLight.KEYLIGHT_RESULTS.E_KLT_ERROR">
+            <summary>
+            Operation failed
+            </summary>
+        </member>
+        <member name="F:Symbol.Keyboard.KeyLight.KEYLIGHT_RESULTS.E_KLT_STRUCTINFO">
+            <summary>
+            The STRUCT_INFO structure field is invalid. Either dwAllocated or dwUsed is less than the size 
+            of STRUCT_INFO, or dwUsed greater than dwAllocted.
+            </summary>
+        </member>
+        <member name="F:Symbol.Keyboard.KeyLight.KEYLIGHT_RESULTS.E_KLT_MISSINGFIELD">
+            <summary>
+            The size of a structure specified in a STRUCT_INFO is too small to contain a required field, or 
+            the field does not exist.
+            </summary>
+        </member>
+        <member name="F:Symbol.Keyboard.KeyLight.KEYLIGHT_RESULTS.E_KLT_PWRFAILED">
+            <summary>
+            A call to the power management API failed.
+            </summary>
+        </member>
+        <member name="F:Symbol.Keyboard.KeyLight.KEYLIGHT_RESULTS.E_KLT_NOTSUPPORTED">
+            <summary>
+            Operation is not supported.
+            </summary>
+        </member>
+        <member name="F:Symbol.Keyboard.KeyLight.KEYLIGHT_RESULTS.E_KLT_NULLPTR">
+            <summary>
+            A NULL pointer was passed for a required argument.
+            </summary>
+        </member>
+    </members>
+</doc>

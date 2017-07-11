@@ -34,7 +34,10 @@
             this.menuItem1 = new System.Windows.Forms.MenuItem();
             this.menuItem2 = new System.Windows.Forms.MenuItem();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -44,6 +47,9 @@
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -54,7 +60,7 @@
             // 
             // menuItem1
             // 
-            this.menuItem1.Text = "Back";
+            this.menuItem1.Text = "Mode";
             this.menuItem1.Click += new System.EventHandler(this.menuItem1_Click);
             // 
             // menuItem2
@@ -64,7 +70,10 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.label9);
+            this.panel1.Controls.Add(this.label8);
+            this.panel1.Controls.Add(this.label7);
+            this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -72,12 +81,41 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(240, 106);
             // 
-            // label2
+            // label9
             // 
-            this.label2.Location = new System.Drawing.Point(109, 38);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(122, 31);
-            this.label2.Text = "Summer Cake\r\nRev 0.1.705\r\n";
+            this.label9.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular);
+            this.label9.ForeColor = System.Drawing.Color.Black;
+            this.label9.Location = new System.Drawing.Point(109, 57);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(67, 20);
+            this.label9.Text = "Trigger:";
+            // 
+            // label8
+            // 
+            this.label8.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular);
+            this.label8.ForeColor = System.Drawing.Color.Black;
+            this.label8.Location = new System.Drawing.Point(109, 83);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(67, 20);
+            this.label8.Text = "Status:";
+            // 
+            // label7
+            // 
+            this.label7.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular);
+            this.label7.ForeColor = System.Drawing.Color.Black;
+            this.label7.Location = new System.Drawing.Point(173, 57);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(64, 20);
+            this.label7.Text = "True";
+            // 
+            // label6
+            // 
+            this.label6.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular);
+            this.label6.ForeColor = System.Drawing.Color.Red;
+            this.label6.Location = new System.Drawing.Point(173, 83);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(64, 20);
+            this.label6.Text = "Hold";
             // 
             // label1
             // 
@@ -143,12 +181,39 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(3, 219);
+            this.button1.Location = new System.Drawing.Point(69, 219);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(234, 46);
+            this.button1.Size = new System.Drawing.Size(168, 46);
             this.button1.TabIndex = 8;
             this.button1.Text = "Add Product";
             this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.SystemColors.Window;
+            this.button2.Location = new System.Drawing.Point(3, 124);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(234, 35);
+            this.button2.TabIndex = 13;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.SystemColors.Window;
+            this.button3.Location = new System.Drawing.Point(69, 179);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(168, 35);
+            this.button3.TabIndex = 14;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(3, 219);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(60, 46);
+            this.button4.TabIndex = 19;
+            this.button4.Text = "Back";
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // Form3
             // 
@@ -156,6 +221,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(240, 268);
+            this.Controls.Add(this.button4);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.textBox3);
@@ -164,6 +232,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.panel1);
+            this.KeyPreview = true;
             this.Menu = this.mainMenu1;
             this.Name = "Form3";
             this.Text = "AuthySku|Scan: True";
@@ -176,7 +245,6 @@
 
         private System.Windows.Forms.MenuItem menuItem1;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TextBox textBox1;
@@ -187,5 +255,12 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.MenuItem menuItem2;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label8;
     }
 }
