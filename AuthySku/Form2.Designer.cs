@@ -130,7 +130,7 @@
             this.Controls.Add(this.panel1);
             this.Menu = this.mainMenu1;
             this.Name = "Form2";
-            this.Text = "Form2";
+            this.Text = "AuthySku";
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 

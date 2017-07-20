@@ -141,9 +141,9 @@
             this.panel2.Controls.Add(this.progressBar1);
             this.panel2.Controls.Add(this.label5);
             this.panel2.Controls.Add(this.pictureBox2);
-            this.panel2.Location = new System.Drawing.Point(0, -11);
+            this.panel2.Location = new System.Drawing.Point(0, -10);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(240, 279);
+            this.panel2.Size = new System.Drawing.Size(240, 278);
             // 
             // label6
             // 
@@ -198,7 +198,7 @@
             this.KeyPreview = true;
             this.Menu = this.mainMenu1;
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "AuthySku";
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);

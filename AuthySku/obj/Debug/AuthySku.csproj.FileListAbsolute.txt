@@ -38,3 +38,20 @@ C:\Users\Admin\Documents\Visual Studio 2008\Projects\AuthySkuMobile\AuthySku\bin
 C:\Users\Admin\Documents\Visual Studio 2008\Projects\AuthySkuMobile\AuthySku\bin\Debug\Symbol.Barcode.xml
 C:\Users\Admin\Documents\Visual Studio 2008\Projects\AuthySkuMobile\AuthySku\obj\Debug\AuthySku.exe
 C:\Users\Admin\Documents\Visual Studio 2008\Projects\AuthySkuMobile\AuthySku\obj\Debug\AuthySku.pdb
+C:\Users\admin\Documents\GitHub\AuthySkuMobile\AuthySku\bin\Debug\AuthySku.exe
+C:\Users\admin\Documents\GitHub\AuthySkuMobile\AuthySku\bin\Debug\AuthySku.pdb
+C:\Users\admin\Documents\GitHub\AuthySkuMobile\AuthySku\bin\Debug\Symbol.Barcode2.xml
+C:\Users\admin\Documents\GitHub\AuthySkuMobile\AuthySku\bin\Debug\Symbol.Keyboard.xml
+C:\Users\admin\Documents\GitHub\AuthySkuMobile\AuthySku\bin\Debug\Newtonsoft.Json.Compact.pdb
+C:\Users\admin\Documents\GitHub\AuthySkuMobile\AuthySku\bin\Debug\Newtonsoft.Json.Compact.xml
+C:\Users\admin\Documents\GitHub\AuthySkuMobile\AuthySku\bin\Debug\Symbol.xml
+C:\Users\admin\Documents\GitHub\AuthySkuMobile\AuthySku\bin\Debug\Symbol.Barcode.xml
+C:\Users\admin\Documents\GitHub\AuthySkuMobile\AuthySku\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\admin\Documents\GitHub\AuthySkuMobile\AuthySku\obj\Debug\AuthySku.Form1.resources
+C:\Users\admin\Documents\GitHub\AuthySkuMobile\AuthySku\obj\Debug\AuthySku.Form2.resources
+C:\Users\admin\Documents\GitHub\AuthySkuMobile\AuthySku\obj\Debug\AuthySku.Form3.resources
+C:\Users\admin\Documents\GitHub\AuthySkuMobile\AuthySku\obj\Debug\AuthySku.Properties.Resources.resources
+C:\Users\admin\Documents\GitHub\AuthySkuMobile\AuthySku\obj\Debug\AuthySku.csproj.GenerateResource.Cache
+C:\Users\admin\Documents\GitHub\AuthySkuMobile\AuthySku\obj\Debug\AuthySku.exe
+C:\Users\admin\Documents\GitHub\AuthySkuMobile\AuthySku\obj\Debug\AuthySku.pdb
+C:\Users\admin\Documents\GitHub\AuthySkuMobile\AuthySku\obj\Debug\AuthySku.Form4.resources

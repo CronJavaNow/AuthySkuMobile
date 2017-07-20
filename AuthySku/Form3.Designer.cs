@@ -34,6 +34,8 @@
             this.menuItem1 = new System.Windows.Forms.MenuItem();
             this.menuItem2 = new System.Windows.Forms.MenuItem();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -70,6 +72,8 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.label10);
+            this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label9);
             this.panel1.Controls.Add(this.label8);
             this.panel1.Controls.Add(this.label7);
@@ -81,11 +85,29 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(240, 106);
             // 
+            // label10
+            // 
+            this.label10.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular);
+            this.label10.ForeColor = System.Drawing.Color.Black;
+            this.label10.Location = new System.Drawing.Point(173, 43);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(64, 20);
+            this.label10.Text = "True";
+            // 
+            // label2
+            // 
+            this.label2.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular);
+            this.label2.ForeColor = System.Drawing.Color.Black;
+            this.label2.Location = new System.Drawing.Point(109, 43);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(67, 20);
+            this.label2.Text = "Scan:";
+            // 
             // label9
             // 
             this.label9.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular);
             this.label9.ForeColor = System.Drawing.Color.Black;
-            this.label9.Location = new System.Drawing.Point(109, 57);
+            this.label9.Location = new System.Drawing.Point(109, 63);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(67, 20);
             this.label9.Text = "Trigger:";
@@ -103,10 +125,10 @@
             // 
             this.label7.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular);
             this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(173, 57);
+            this.label7.Location = new System.Drawing.Point(173, 63);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(64, 20);
-            this.label7.Text = "True";
+            this.label7.Text = "False";
             // 
             // label6
             // 
@@ -235,7 +257,7 @@
             this.KeyPreview = true;
             this.Menu = this.mainMenu1;
             this.Name = "Form3";
-            this.Text = "AuthySku|Scan: True";
+            this.Text = "AuthySku";
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -262,5 +284,7 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label10;
     }
 }

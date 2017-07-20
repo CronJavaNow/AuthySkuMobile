@@ -21,7 +21,7 @@ namespace AuthySku
     public partial class Form3 : Form
     {
         public bool scannerActive = true;
-        public bool scannerMode = true;
+        public bool scannerMode = false;
         public string wareHouse = "2143";
 
         public Form3()
@@ -49,7 +49,7 @@ namespace AuthySku
             if (scannerActive)
             {
                 scannerActive = false;
-                this.Text = "AuthySku|Scan: " + scannerActive.ToString();
+                label10.Text = "False";
 
                 //hide false text boxes "buttons"
                 button2.Visible = false;
@@ -58,7 +58,7 @@ namespace AuthySku
             else
             {
                 scannerActive = true;
-                this.Text = "AuthySku|Scan: " + scannerActive.ToString();
+                label10.Text = "True";
 
                 //show false text boxes "buttons"
                 button2.Visible = true;
@@ -94,7 +94,7 @@ namespace AuthySku
 
             ScanData MyData = MyBarcode.ScanWait(8000); // 5 seconds timeout
 
-            if (MyData.Result == Symbol.Barcode2.Results.E_SCN_READTIMEOUT)   // Barcode was not scanned within 5 secs
+            if (MyData.Result == Symbol.Barcode2.Results.E_SCN_READTIMEOUT)   // Barcode was not scanned within 8 secs
             {
                 scanButton.Text = "No Scan Found";
                 textBox.Text = "No Scan Found";
