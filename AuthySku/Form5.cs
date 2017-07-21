@@ -18,16 +18,16 @@ using System.IO;
 
 namespace AuthySku
 {
-    public partial class Form3 : Form
+    public partial class Form5 : Form
     {
+
         public bool scannerActive = true;
         public bool scannerMode = false;
         public string wareHouse = "2143";
 
-        public Form3()
+        public Form5()
         {
             InitializeComponent();
-            textBox2.Focus();
         }
 
         private void menuItem1_Click(object sender, EventArgs e)
@@ -49,24 +49,30 @@ namespace AuthySku
             if (scannerActive)
             {
                 scannerActive = false;
-                label10.Text = "False";
+                label1.Text = "False";
 
                 //hide false text boxes "buttons"
-                button2.Visible = false;
-                button3.Visible = false;
+                skuButton.Visible = false;
+                locationButton.Visible = false;
             }
             else
             {
                 scannerActive = true;
-                label10.Text = "True";
+                label1.Text = "True";
 
                 //show false text boxes "buttons"
-                button2.Visible = true;
-                button3.Visible = true;
+                skuButton.Visible = true;
+                locationButton.Visible = true;
 
-                button2.Text = textBox1.Text.ToString();
-                button3.Text = textBox3.Text.ToString();
+                skuButton.Text = skuTextBox.Text.ToString();
+                locationButton.Text = locationTextBox.Text.ToString();
             }
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            new Form2().Show();
+            this.Hide();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -81,7 +87,7 @@ namespace AuthySku
                 Settings setting = (Settings)serializer.Deserialize(file, typeof(Settings));
 
                 // Create a request for the URL. 		
-                WebRequest request = WebRequest.Create("http://" + setting.Host + "/api/" + setting.Token + "/addItem/" + textBox1.Text + "/" + textBox2.Text + "/" + textBox3.Text + "/" + wareHouse);
+                WebRequest request = WebRequest.Create("http://" + setting.Host + "/api/" + setting.Token + "/removeItem/" + skuTextBox.Text + "/" + qtyTextBox.Text + "/" + locationTextBox.Text + "/" + wareHouse);
                 request.ContentType = "application/json";
                 request.Method = "GET";
 
@@ -93,7 +99,7 @@ namespace AuthySku
                     var result = streamReader.ReadToEnd();
                     Dictionary<string, string> htmlAttributes = JsonConvert.DeserializeObject<Dictionary<string, string>>(result);
 
-                    if (htmlAttributes["AddItemStatus"] == "Success")
+                    if (htmlAttributes["RemoveItemStatus"] == "Success")
                     {
                         label6.Text = "Success";
                         button1.Enabled = true;
@@ -107,26 +113,14 @@ namespace AuthySku
             }
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void skuButton_Click(object sender, EventArgs e)
         {
-            if (scannerActive)
-            {
-                Scanner.wakeScanner(button2, textBox1, scannerMode);
-            }
+            Scanner.wakeScanner(skuButton, skuTextBox, scannerMode);
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void locationButton_Click(object sender, EventArgs e)
         {
-            if (scannerActive)
-            {
-                Scanner.wakeScanner(button3, textBox3, scannerMode);
-            }
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-            new Form2().Show();
-            this.Hide();
+            Scanner.wakeScanner(locationButton, locationTextBox, scannerMode);
         }
     }
 }

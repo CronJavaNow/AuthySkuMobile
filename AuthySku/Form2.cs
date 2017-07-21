@@ -8,6 +8,7 @@ using System.Text;
 using System.Windows.Forms;
 
 using Symbol;
+using Symbol.Attributes;
 using Symbol.Barcode2;
 
 using Newtonsoft.Json;
@@ -51,7 +52,7 @@ namespace AuthySku
 
         private void button3_Click(object sender, EventArgs e)
         {
-            //new Form4().Show();
+            new Form5().Show();
             this.Hide();
         }
     }

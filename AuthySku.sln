@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 10.00
 # Visual Studio 2008
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthySku", "AuthySku\AuthySku.csproj", "{1A4ADB40-9064-4553-87DA-E8222120418F}"
 EndProject
+Project("{B900F1C2-3D47-4FEC-85B3-04AAF18C3634}") = "AuthySkuMobile", "AuthySkuMobile\AuthySkuMobile.vddproj", "{72CF9F57-C8DF-4F18-8566-D538B098CB50}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,8 @@ Global
 		{1A4ADB40-9064-4553-87DA-E8222120418F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1A4ADB40-9064-4553-87DA-E8222120418F}.Release|Any CPU.Build.0 = Release|Any CPU
 		{1A4ADB40-9064-4553-87DA-E8222120418F}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{72CF9F57-C8DF-4F18-8566-D538B098CB50}.Debug|Any CPU.ActiveCfg = Debug
+		{72CF9F57-C8DF-4F18-8566-D538B098CB50}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
