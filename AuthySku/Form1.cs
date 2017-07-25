@@ -22,7 +22,8 @@ namespace AuthySku
         public Form1()
         {
             InitializeComponent();
-            
+
+            label2.Text = "Crackling Campfire" + "\r\n" + "Rev 1.0.72117";
         }
 
         private void Form1_Shown(Object sender, EventArgs e)

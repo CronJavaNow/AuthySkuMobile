@@ -243,6 +243,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(240, 268);
+            this.ControlBox = false;
             this.Controls.Add(this.locationButton);
             this.Controls.Add(this.locationTextBox);
             this.Controls.Add(this.skuButton);

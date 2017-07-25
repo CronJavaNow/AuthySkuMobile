@@ -20,9 +20,17 @@ namespace AuthySku
 {
     public partial class Form2 : Form
     {
+        public bool settingsLock = true;
+
         public Form2()
         {
             InitializeComponent();
+
+            menuItem1.Text = "Locked";
+            menuItem2.Enabled = false;
+            menuItem2.Text = "";
+
+            label2.Text = "Crackling Campfire" + "\r\n" + "Rev 1.0.72117";
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -39,7 +47,22 @@ namespace AuthySku
 
         private void menuItem1_Click(object sender, EventArgs e)
         {
-            this.Close();
+            if (settingsLock)
+            {
+                settingsLock = false;
+
+                menuItem1.Text = "Lock";
+                menuItem2.Enabled = true;
+                menuItem2.Text = "Settings";
+            }
+            else
+            {
+                settingsLock = true;
+
+                menuItem1.Text = "Locked";
+                menuItem2.Enabled = false;
+                menuItem2.Text = ""; 
+            }
         }
 
         private void menuItem2_Click(object sender, EventArgs e)

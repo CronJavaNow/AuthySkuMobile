@@ -41,12 +41,12 @@ namespace AuthySku
             if (scannerMode)
             {
                 scannerMode = false;
-                label5.Text = "False";
+                menuItem1.Text = "Trigger: Off";
             }
             else
             {
                 scannerMode = true;
-                label5.Text = "True";
+                menuItem1.Text = "Trigger: On";
             }
         }
 
@@ -55,14 +55,14 @@ namespace AuthySku
             if (scannerActive)
             {
                 scannerActive = false;
-                label10.Text = "False";
+                menuItem2.Text = "Scanner: Off";
 
                 button3.Visible = false;
             }
             else
             {
                 scannerActive = true;
-                label10.Text = "True";
+                menuItem2.Text = "Scanner: On";
 
                 button3.Visible = true;
                 button3.Text = textBox2.Text.ToString();
@@ -95,18 +95,25 @@ namespace AuthySku
 
                     if (htmlAttributes["id"] == "null")
                     {
-                        label6.Text = "Fail";
+                        button3.BackColor = Color.Red;
+                        textBox2.BackColor = Color.Red;
+
                         button1.Enabled = true;
                         
                     }
                     else
                     {
-                        label6.Text = "Success";
                         textBox1.Text = htmlAttributes["title"] +
                             "\r\n" + "---------------" + "\r\n" +
                             "QTY: " + htmlAttributes["qty"] + "   Cost: $" + htmlAttributes["cost"] + "   Price: $" + htmlAttributes["price"] +
                             "\r\n" + "---------------" + "\r\n" +
-                            htmlAttributes["locations"];
+                            htmlAttributes["locations"] +
+                            "\r\n" + "---------------" + "\r\n" +
+                            "Created: " + htmlAttributes["created"] + "   Total Sold: " + htmlAttributes["sold"];
+
+                        button3.BackColor = Color.Green;
+                        textBox2.BackColor = Color.Green;
+
                         button1.Enabled = true;
                     }
                 }
@@ -116,6 +123,9 @@ namespace AuthySku
         private void button3_Click(object sender, EventArgs e)
         {
             Scanner.wakeScanner(button3, textBox2, scannerMode);
+
+            button3.BackColor = Color.White;
+            textBox2.BackColor = Color.White;
         }
 
         private void Form4_KeyDown(object sender, KeyEventArgs e)
@@ -143,6 +153,11 @@ namespace AuthySku
                 // Enter
             }
 
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+            textBox2.BackColor = Color.White;
         }
     }
 }
